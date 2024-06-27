@@ -13,8 +13,8 @@ export const bookRouter = new Hono();
 
 
 bookRouter
-    .get("/api/books", listBooks)
-    .get("/api/books/:id", getbook)
-    .post("/api/create-book", createbook)
-    .put("/api/update-book/:id", updatebook)
-    .delete("/api/delete-book/:id", deletebook)
+    .get("/books", listBooks)
+    .get("/books/:id", getbook)
+    .post("/create-book", createbook)
+    .put("/update-book/:id", updatebook)
+    .delete("/delete-book/:id", deletebook)
